@@ -30,5 +30,10 @@ pipeline {
         }
       
     }
-     
+      post('send email') {
+            always {
+              emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
+               echo 'success..'
+            }
+        }
 }
