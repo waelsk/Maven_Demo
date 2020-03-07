@@ -14,16 +14,26 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
+         
+ 
+         stage('Test') {
             steps {
                bat label: '', script: 'mvn test'
                 echo 'Testing..'
             }
         }
+        
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
         }
+      
     }
+      post('send email') {
+            always {
+              emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
+               echo 'success..'
+            }
+        }
 }
