@@ -32,7 +32,7 @@ pipeline {
     }
       post('send email') {
             always {
-              emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
+              emailext body: 'test', subject: 'C1', to: 'soukehw@gmail.com'
                 echo 'success'
             }
         }
