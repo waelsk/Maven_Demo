@@ -20,7 +20,7 @@ pipeline {
                 echo 'Testing..'
             }
         }
- post('send email') {
+ stage('send email') {
             always {
               emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
                 echo 'sending email..'
