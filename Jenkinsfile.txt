@@ -21,7 +21,7 @@ pipeline {
             }
         }
  stage('send email') {
-            always {
+            steps {
               emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
                 echo 'sending email..'
             }
