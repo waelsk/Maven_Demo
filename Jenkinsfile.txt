@@ -20,16 +20,17 @@ pipeline {
                 echo 'Testing..'
             }
         }
- post('send email') {
-            always {
-              emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
-                echo 'sending email..'
-            }
-        }
+ 
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
             }
         }
     }
+    post('send email') {
+            always {
+              emailext body: 'test', subject: 'C1', to: 'wael.soukeh@esprit.tn'
+                echo 'sending email..'
+            }
+        }
 }
