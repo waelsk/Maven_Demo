@@ -14,12 +14,7 @@ pipeline {
                 echo 'Building..'
             }
         }
-        stage('Test') {
-            steps {
-               bat label: '', script: 'mvn test'
-                echo 'Testing..'
-            }
-        }
+         
  
          
       
