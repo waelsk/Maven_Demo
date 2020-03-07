@@ -16,7 +16,18 @@ pipeline {
         }
          
  
-         
+         stage('Test') {
+            steps {
+               bat label: '', script: 'mvn test'
+                echo 'Testing..'
+            }
+        }
+        
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
       
     }
       post('send email') {
