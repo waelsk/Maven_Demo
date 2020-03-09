@@ -36,8 +36,4 @@ pipeline {
                echo 'success..'
             }
         }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 3c8902fd032d1abb42bf11cf1eb2e3347c803244
