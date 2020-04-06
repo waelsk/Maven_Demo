@@ -23,7 +23,7 @@ stage("clone code") {
 steps {
 script {
 // Let's clone the source
-git 'https://github.com/aymenkazdaghli/cirepository.git';
+git 'https://github.com/waelsk/Maven_Demo.git';
 }
 }
 }
