@@ -14,7 +14,7 @@ NEXUS_PROTOCOL = "http"
 // Where your Nexus is running
 NEXUS_URL = "localhost:8081"
 // Repository where we will upload the artifact
-NEXUS_REPOSITORY = "test_repository"
+NEXUS_REPOSITORY = "Maven-Demo"
 // Jenkins credential id to authenticate to Nexus OSS
 NEXUS_CREDENTIAL_ID = "nexus-credentials"
 }
